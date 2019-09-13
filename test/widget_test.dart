@@ -14,6 +14,6 @@ void main() {
   testWidgets('Checking if "Hello, world!" shows up...', (WidgetTester tester) async {
     // Build our app and trigger a frame.
     await tester.pumpWidget(MyApp());
-    expect(find.text('Hello, world!'), findsOneWidget);
+    expect(find.text('Hello, world!!'), findsOneWidget);
   });
 }
