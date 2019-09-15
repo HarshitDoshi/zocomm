@@ -2,4 +2,4 @@
 
 # zocomm
 
-a new communication tool
+a new-age communication tool
