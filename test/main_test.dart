@@ -6,13 +6,13 @@
 // tree, read text, and verify that the values of widget properties are correct.
 
 import 'package:flutter_test/flutter_test.dart';
-
 import 'package:zocomm/main.dart';
+import 'package:zocomm/pages/ConversationsPageList.dart';
 
 void main() {
-  testWidgets('Checking if "Hello, world!" shows up...', (WidgetTester tester) async {
+  testWidgets('Main UI Test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(MyApp());
-    expect(find.text('Hello, world!'), findsOneWidget);
+    await tester.pumpWidget(zocomm());
+    expect(find.byType(ConversationsPageList), findsOneWidget);
   });
 }
